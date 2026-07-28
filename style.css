@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29, 32, 39);
+    padding: 1.3rem;
+    box-shadow: 0 4px 30px rgba(1, 1, 1, 0.289);
+}
+
+.nav1 {
+    display: flex;
+    gap: clamp(1rem,3vw,3rem);
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    color: rgb(237, 236, 236);
+    text-decoration: none;
+}
+#forge{
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    color: rgb(255, 199, 114);
+    text-decoration: none;
+}
+
+.navs {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    color: rgb(216, 214, 214);
+    text-decoration: none;
+}
+
+.navs:hover,
+#login:hover {
+    color:white;
+}
+
+.nav2 {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    color: rgb(226, 225, 225);
+    text-decoration: none;
+}
+
+#sign-in-btn {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(48, 46, 46);
+    background-color: rgb(255, 199, 114);
+    font-weight: bold;
+}
+
+#sign-in-btn:hover {
+    cursor:pointer;
+    transform:scale(1.02);
+}
+
+.hero{
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#hero-txt1{
+    display: inline-block;
+    color: rgb(216, 215, 215);
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#hero-span{
+    color: rgb(255, 199, 114);
+}
+
+#hero-txt2{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(131, 131, 127);
+    margin-top: 0;
+}
+
+.hero-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#coding-btn{
+    border: 2px solid rgb(162, 162, 160);
+    padding: 1rem 3rem;
+    color: rgb(162, 162, 160);
+    background-color: #0f172a;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: transform, color, border-color, 0.2s ease-out;
+    cursor: pointer;
+}
+
+#coding-btn:hover{
+    transform: translateY(-2px);
+    color:rgb(217, 214, 214);
+    border-color:rgb(202, 201, 201);
+}
+
+#lessons-btn{
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(255, 199, 114);
+    border: none;
+    padding: 1rem 3rem;
+    transition: transform, background-color, 0.2s ease-out;
+    cursor: pointer;
+}
+
+#lessons-btn:hover{
+    transform: translateY(-2px);
+    background-color: rgb(253, 180, 70);
+}
+
+.features{
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#why{
+    color: rgb(208, 207, 207);
+}
+
+#overview{
+    color: grey;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.feature-area{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    vertical-align: top;
+    margin-bottom: 5rem;
+}
+
+.feature-div{
+    border-radius: 10px;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #333c4f;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 2px 30px rgb(0, 0, 0);
+}
+
+.feature-div:hover{
+    transform: scale(1.05);
+}
+
+.feature{
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(253, 180, 70);
+}
+
+.desc{
+    font-size: medium;
+    color: rgb(146, 146, 146);
+    transition: color, 0.3s ease-in;
+}
+
+.desc:hover{
+    color: rgb(192, 192, 192);
+}
+
+
+
+
+
+
+
