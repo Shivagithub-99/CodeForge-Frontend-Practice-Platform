@@ -13,7 +13,7 @@
     <nav>
         <div class="nav1">
             <a href="/" id="logo">Code<span id="forge">Forge</span></a>
-            <a href="" class="navs">Playground</a>
+            <a href="#playground" class="navs">Playground</a>
             <a href="" class="navs">Learn</a>
             <a href="" class="navs">Docs</a>
             <a href="" class="navs">Pricing</a>
@@ -23,6 +23,7 @@
             <button id="sign-in-btn">Sign up</button>
         </div>
     </nav>
+
     <section class="hero">
         <p id="hero-txt1">Master <span id="hero-span">Frontend Development</span> <br> by Building Real Projects...</p>
         <p id="hero-txt2">Learn HTML, CSS, and JavaScript through interactive lessons,<br>
@@ -34,22 +35,67 @@
             <button id="lessons-btn">Explore Lessons</button>
         </div>
     </section>
+
     <section class="features">
         <h1 id="why">Why CodeForge ?</h1>
         <p id="overview">Everything you need to learn, practice, and master frontend development—all in one place.</p>
         <div class="feature-area">
             <div class="feature-div">
                 <p class="feature">Learn Concepts</p>
-                <p class="desc">Master HTML, CSS, and JavaScript through structured lessons designed to build a strong frontend foundation.</p>
+                <p class="desc">Master HTML, CSS, and JavaScript through structured lessons designed to build a strong
+                    frontend foundation.</p>
             </div>
             <div class="feature-div">
                 <p class="feature">Practice Challenges</p>
-                <p class="desc">Reinforce your knowledge with interactive coding exercises and solve real-world frontend problems.</p>
+                <p class="desc">Reinforce your knowledge with interactive coding exercises and solve real-world frontend
+                    problems.</p>
             </div>
             <div class="feature-div">
                 <p class="feature"> Build Concepts</p>
-                <p class="desc">Apply what you've learned by creating real projects in a live coding playground with instant preview.</p>
+                <p class="desc">Apply what you've learned by creating real projects in a live coding playground with
+                    instant preview.</p>
             </div>
+        </div>
+    </section>
+
+    <section class="playground">
+        <h2>
+            Code Playground
+        </h2>
+        <p>
+            Write, experiment, and bring your ideas to life...
+        </p>
+        <div class="editors-container">
+            <div class="editor-card">
+                <h3>HTML</h3>
+                <textarea class="code-editor" placeholder="Write HTML code here...">
+            </textarea>
+            </div>
+
+            <div class="editor-card">
+                <h3>CSS</h3>
+                <textarea class="code-editor" placeholder="Write CSS code here...">
+            </textarea>
+            </div>
+
+            <div class="editor-card">
+                <h3>JavaScript</h3>
+                <textarea class="code-editor" placeholder="Write JavaScript code here...">
+            </textarea>
+            </div>
+        </div>
+
+        <div class="playground-actions">
+            <button id="run-btn">
+                Run Code
+            </button>
+        </div>
+
+        <div class="preview">
+            <h3>
+                Output
+            </h3>
+            <iframe id="output-frame" title="Code Output Preview"></iframe>
         </div>
     </section>
 
