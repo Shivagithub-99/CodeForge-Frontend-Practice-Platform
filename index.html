@@ -12,53 +12,61 @@
 <body>
     <nav>
         <div class="nav1">
-            <a href="/" id="logo">Code<span id="forge">Forge</span></a>
+            <a href="" id="logo">Code<span id="forge">Forge</span></a>
             <a href="#playground" class="navs">Playground</a>
-            <a href="" class="navs">Learn</a>
-            <a href="" class="navs">Docs</a>
-            <a href="" class="navs">Pricing</a>
+            <a href="./Challenges.html" class="navs">Challenges</a>
+            <a href="#features" class="navs">About</a>
+            <a href="#contact" class="navs">Contact</a>
         </div>
         <div class="nav2">
-            <a href="" id="login">Login</a>
-            <button id="sign-in-btn">Sign up</button>
+            <a href="./login.html" id="login">Login</a>
+            <a href="./signup.html"><button id="sign-in-btn">Sign up</button></a>
         </div>
     </nav>
 
     <section class="hero">
-        <p id="hero-txt1">Master <span id="hero-span">Frontend Development</span> <br> by Building Real Projects...</p>
-        <p id="hero-txt2">Learn HTML, CSS, and JavaScript through interactive lessons,<br>
-            hands-on challenges, and a live coding playground where you <br>
-            can write, run, and experiment with code instantly.
-        </p>
-        <div class="hero-btns">
-            <button id="coding-btn">Start Coding</button>
-            <button id="lessons-btn">Explore Lessons</button>
+        <div class="hero-1">
+            <img src="./assets/images/programming-animate.svg" alt="" id="hero-img">
+        </div>
+        <div class="hero-2">
+            <p id="hero-txt1">Master <span id="hero-span"></span> <br> by Building Real Projects...</p>
+            <p id="hero-txt2">Learn HTML, CSS, and JavaScript through interactive lessons,<br>
+                hands-on challenges, and a live coding playground where you <br>
+                can write, run, and experiment with code instantly.
+            </p>
+            <div class="hero-btns">
+                <button id="coding-btn">Start Coding</button>
+                <button id="lessons-btn">Solve Challenges</button>
+            </div>
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <h1 id="why">Why CodeForge ?</h1>
         <p id="overview">Everything you need to learn, practice, and master frontend development—all in one place.</p>
         <div class="feature-area">
             <div class="feature-div">
+                <img src="./assets/images/feature1-img.svg" alt="" class="feature-img">
                 <p class="feature">Learn Concepts</p>
                 <p class="desc">Master HTML, CSS, and JavaScript through structured lessons designed to build a strong
                     frontend foundation.</p>
             </div>
             <div class="feature-div">
+                <img src="./assets/images/feature 2-img.svg" alt="" class="feature-img">
                 <p class="feature">Practice Challenges</p>
                 <p class="desc">Reinforce your knowledge with interactive coding exercises and solve real-world frontend
                     problems.</p>
             </div>
             <div class="feature-div">
-                <p class="feature"> Build Concepts</p>
+                <img src="./assets/images/feature 3-img.svg" alt="" class="feature-img">
+                <p class="feature">Build Concepts</p>
                 <p class="desc">Apply what you've learned by creating real projects in a live coding playground with
                     instant preview.</p>
             </div>
         </div>
     </section>
 
-    <section class="playground">
+    <section class="playground" id="playground">
         <h2>
             Code Playground
         </h2>
@@ -99,6 +107,42 @@
                 Output
             </h3>
             <iframe id="output-frame" title="Code Output Preview"></iframe>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="left">
+            <h3 id="signin">Have questions, feedback, or suggestions?</h3>
+            <p id="para">We'd love to hear from you. Let's build better learning experiences together.</p>
+            <input type="text" placeholder="Full name">
+            <input type="email" name="" id="email" placeholder="Email address">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" placeholder="Message"></textarea>
+            <button id="msg-btn">Send us message</button>
+        </div>
+        <div class="right">
+            <div class="image-part">
+                <img src="./assets/images/call-center-animate.svg" alt="" id="contact-img">
+            </div>
+            <div class="address-info">
+                <div class="mail">
+                    <img src="./assets/images/icons8-mail-48.png" alt="">
+                    <p>support@codeforge.com</p>
+                </div>
+                <div class="support">
+                    <img src="./assets/images/icons8-support-48.png" alt="">
+                    <p>Get help with playground issues</p>
+                </div>
+                <div class="social">
+                    <img src="./assets/images/icons8-facebook-logo-48.png" alt="">
+                    <img src="./assets/images/icons8-instagram-logo-48.png" alt="">
+                    <img src="./assets/images/icons8-linkedin-48.png" alt="">
+                </div>
+                <div class="response">
+                    <img src="./assets/images/icons8-hotline-48.png" alt="">
+                    <p>We usually respond within 24 hours</p>
+                </div>
+            </div>
         </div>
     </section>
 

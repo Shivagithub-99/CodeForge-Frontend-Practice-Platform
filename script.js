@@ -78,3 +78,25 @@ resetBtn.addEventListener("click", () => {
     starterCode();
 })
 
+//typing effect
+const heroSpan = document.querySelector("#hero-span");
+const text = "Frontend Development";
+let index = 0;
+function typeEffect(){
+    if(index < text.length){
+        heroSpan.textContent += text[index];
+        index++;
+        setTimeout(typeEffect, 100);
+    }
+}
+
+typeEffect();
+
+
+const codingBtn = document.querySelector("#coding-btn");
+
+codingBtn.addEventListener("click", () => {
+    document.querySelector("#playground").scrollIntoView({
+        behavior: "smooth"
+    });
+});
