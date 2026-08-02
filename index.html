@@ -7,6 +7,12 @@
     <title>Codeforge - Coding Platform</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,7 +42,7 @@
             </p>
             <div class="hero-btns">
                 <button id="coding-btn">Start Coding</button>
-                <button id="lessons-btn">Solve Challenges</button>
+                <a href="./Challenges.html"><button id="lessons-btn">Solve Challenges</button></a>
             </div>
         </div>
     </section>
@@ -76,20 +82,28 @@
         <div class="editors-container">
             <div class="editor-card">
                 <h3>HTML</h3>
-                <textarea class="code-editor" id="html-editor" placeholder="Write HTML code here...">
-            </textarea>
+                <div class="editor-wrapper">
+                    <pre id="html-highlight" class="highlight"></pre> <textarea id="html-editor" class="code-editor"
+                        placeholder="Write HTML code here..." spellcheck="false"></textarea>
+                </div>
             </div>
 
             <div class="editor-card">
                 <h3>CSS</h3>
-                <textarea class="code-editor" id="css-editor" placeholder="Write CSS code here...">
-            </textarea>
+                <div class="editor-wrapper">
+                    <pre id="css-highlight" class="highlight"></pre>
+                    <textarea id="css-editor" class="code-editor" placeholder="Write CSS code here..."
+                        spellcheck="false"></textarea>
+                </div>
             </div>
 
             <div class="editor-card">
                 <h3>JavaScript</h3>
-                <textarea class="code-editor" id="js-editor" placeholder="Write JavaScript code here...">
-            </textarea>
+                <div class="editor-wrapper">
+                    <pre id="js-highlight" class="highlight"></pre> <textarea id="js-editor" class="code-editor"
+                        placeholder="Write JavaScript code here..." spellcheck="false">
+                    </textarea>
+                </div>
             </div>
         </div>
 
@@ -107,6 +121,99 @@
                 Output
             </h3>
             <iframe id="output-frame" title="Code Output Preview"></iframe>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about CodeForge.</p>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is CodeForge?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        CodeForge is a frontend learning platform where users can learn
+                        HTML, CSS, and JavaScript through interactive lessons,
+                        challenges, and a live coding playground.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is CodeForge free to use?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, CodeForge is free to use and helps beginners practice
+                        frontend development directly from their browser.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How does the coding playground work?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Users can write HTML, CSS, and JavaScript code and instantly
+                        see the output using our live preview environment.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What technologies can I learn?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Currently, CodeForge focuses on frontend technologies like
+                        HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Who can use CodeForge?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        CodeForge is designed for beginners, students, and anyone
+                        who wants to improve their frontend development skills.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What features are coming next?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Future updates include advanced code editing, more challenges,
+                        progress tracking, and project-based learning.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -146,6 +253,11 @@
         </div>
     </section>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
     <script src="./script.js"></script>
 </body>
 

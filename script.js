@@ -4,6 +4,9 @@ const jsEditor = document.querySelector("#js-editor");
 const runBtn = document.querySelector("#run-btn");
 const resetBtn = document.querySelector("#reset-btn");
 const output = document.querySelector("#output-frame");
+const htmlHighlight = document.querySelector("#html-highlight");
+const cssHighlight = document.querySelector("#css-highlight");
+const jsHighlight = document.querySelector("#js-highlight");
 
 function starterCode(){
     htmlEditor.value = `
@@ -26,6 +29,10 @@ function starterCode(){
     jsEditor.value = `
         console.log("Welcome to CodeForge!");
     `;
+
+    updateHighlight(htmlEditor, htmlHighlight, "markup");
+    updateHighlight(cssEditor, cssHighlight, "css");
+    updateHighlight(jsEditor, jsHighlight, "javascript");
 }
 
 starterCode();
@@ -100,3 +107,79 @@ codingBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+
+function enableHighlight(editor, highlight, language){
+
+    editor.addEventListener("input",()=>{
+
+        updateHighlight(editor,highlight,language);
+
+    });
+
+
+    editor.addEventListener("scroll",()=>{
+
+        highlight.scrollTop = editor.scrollTop;
+        highlight.scrollLeft = editor.scrollLeft;
+
+    });
+
+}
+
+function updateHighlight(editor, highlight, language){
+
+    highlight.textContent = editor.value;
+
+    highlight.className = `highlight language-${language}`;
+
+    Prism.highlightElement(highlight);
+
+}
+
+enableHighlight(
+    htmlEditor,
+    htmlHighlight,
+    "markup"
+);
+
+
+enableHighlight(
+    cssEditor,
+    cssHighlight,
+    "css"
+);
+
+
+enableHighlight(
+    jsEditor,
+    jsHighlight,
+    "javascript"
+);
+
+const faqButtons = document.querySelectorAll(".faq-question");
+
+
+faqButtons.forEach(button => {
+
+    button.addEventListener("click",()=>{
+
+        const faqItem = button.parentElement;
+
+        faqItem.classList.toggle("active");
+
+
+        const icon = button.querySelector("span");
+
+        if(faqItem.classList.contains("active")){
+            icon.textContent = "-";
+        }
+        else{
+            icon.textContent = "+";
+        }
+
+    });
+
+});
+
+

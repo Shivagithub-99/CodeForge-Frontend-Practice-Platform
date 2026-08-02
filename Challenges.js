@@ -79,9 +79,16 @@ challenges.forEach((challenge)=>{
             <span>${challenge.xp}XP</span>
         </div>
 
-        <button id="challenge-btn">Start Challenge</button>
+        <a href="./index.html#playground">
+                <button id="challenge-btn">
+                    Start Challenge
+                </button>
+            </a>
     `;
 
     challengeContainer.appendChild(card);
 
 });
+
+const solveBtn = document.querySelector("#challenge-btn");
+
